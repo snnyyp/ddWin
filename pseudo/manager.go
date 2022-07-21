@@ -7,17 +7,17 @@ import (
 func GetPseudoByName(name string) IfceIoBase {
 	var pseudo IfcePseudoBase
 	switch name {
-	case "stdout":
+	case "*stdout*":
 		pseudo = &Stdout{}
-	case "stdin":
+	case "*stdin*":
 		pseudo = &Stdin{}
-	case "stderr":
+	case "*stderr*":
 		pseudo = &Stderr{}
-	case "null":
+	case "*null*":
 		pseudo = &Null{}
-	case "zero":
+	case "*zero*":
 		pseudo = &Zero{}
-	case "urandom":
+	case "*urandom*":
 		pseudo = &Urandom{}
 	}
 	pseudo.New()
