@@ -1,11 +1,16 @@
-package pseudo
+package Pseudo
 
 import (
-	. "github.com/snnyyp/ddWin/define"
+	. "github.com/snnyyp/ddWin/Define"
 )
 
-func GetPseudoByName(name string) IfceIoBase {
-	var pseudo IfcePseudoBase
+func IsPseudo(s string) bool {
+	return s == "*stdout*" || s == "*stdin*" || s == "*stderr*" ||
+		s == "*null*" || s == "*zero*" || s == "*urandom*"
+}
+
+func GetByName(name string) IfceBasicFileHandle {
+	var pseudo pseudoAbstract
 	switch name {
 	case "*stdout*":
 		pseudo = &Stdout{}

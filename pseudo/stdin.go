@@ -1,7 +1,7 @@
-package pseudo
+package Pseudo
 
 import (
-	. "github.com/snnyyp/ddWin/define"
+	. "github.com/snnyyp/ddWin/Define"
 	"os"
 )
 
@@ -10,5 +10,5 @@ type Stdin struct {
 }
 
 func (s *Stdin) New() {
-	s.file, _ = os.OpenFile("CONIN$", FileFlag, FilePerm)
+	s.file, _ = os.OpenFile("CONIN$", UniversalOpenMode, DefaultPermission)
 }

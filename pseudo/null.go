@@ -1,12 +1,11 @@
-package pseudo
+package Pseudo
 
 import (
-	. "github.com/snnyyp/ddWin/define"
 	"io"
 )
 
 type Null struct {
-	IfcePseudoBase
+	pseudoAbstract
 }
 
 func (*Null) New() {}
@@ -25,4 +24,8 @@ func (*Null) Seek(int64, int) (int64, error) {
 
 func (*Null) Close() error {
 	return nil
+}
+
+func (*Null) Fd() uintptr {
+	return 0
 }

@@ -1,4 +1,4 @@
-package pseudo
+package Pseudo
 
 type Zero struct {
 	Null

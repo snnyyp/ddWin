@@ -1,4 +1,4 @@
-package pseudo
+package Pseudo
 
 import (
 	"os"

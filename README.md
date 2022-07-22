@@ -1,2 +1,4 @@
 # ddWin
-A modern clone of dd utility for Windows OS
+A modern *unix dd tool clone for Windows OS
+
+## Command line Arguments
