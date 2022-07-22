@@ -1,3 +1,6 @@
+Using Golang to write tools interacting with semi-low-layer Windows OS is a real pain in the ass, so I quit. Maybe the remake version would be rewritten in other languages
+由于用Golang写和Windows较底层交互的工具实在是有点**，所以我弃坑了。可能未来的重制版会用其他语言写
+
 # ddWin
 A modern *unix dd tool clone for Windows OS
 
